@@ -1,0 +1,82 @@
+/* Variables */
+
+// fonts
+
+$font-primary: 'Monstserrat', sans-serif;
+$font-secondary: 'Oswald', sans-serif;
+
+// colors
+
+$backgroundColor: #ece5e5; // Very light gray for background
+$textColor: #333333; // Dark gray for text
+$greenColor: #596e4e; // Main green color
+$buttonColor: #4caf50; // Button green
+$inputBackground: #d8c4c4; // Light gray for input background
+$inputBorder: rgb(61, 217, 0); // Greenish border color for input
+
+// simply  reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ustawienia globalne */
+html,
+body {
+  height: 100vh;
+  background-color: $greenColor;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: $backgroundColor;
+  border-radius: 20px;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 54px -12px rgba(66, 68, 90, 1);
+}
+h1 {
+  font-weight: 900;
+  font-size: 50px;
+  color: $textColor;
+}
+.slogan {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: rgb(20, 121, 11);
+}
+
+.input__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  background-color: $inputBackground;
+  border: none;
+  // margin-bottom: 20px;
+  width: 350px;
+}
+input::placeholder {
+  color: rgb(165, 152, 157);
+  font-family: monospace;
+  font-size: 12px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

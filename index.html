@@ -7,26 +7,28 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Focus List</title>
   </head>
   <body>
-    <header>
+    <form id="todo__form">
       <h1>Focus list</h1>
       <p class="slogan">Your focus, your flow.</p>
-    </header>
-    <main>
-      <form id="todo-form">
-        <input
-          type="text"
-          name=""
-          id="todoField"
-          placeholder="Add new task ..."
-        />
+      <div class="input__group">
+        <input type="text" id="inputField" placeholder="Add new task ... " />
         <button type="submit">
-          <span class="material-symbols-outlined"> add </span>
+          <span class="material-symbols-outlined">add</span>
         </button>
-      </form>
-    </main>
+      </div>
+    </form>
     <script type="module" src="/src/app.js"></script>
   </body>
 </html>
