@@ -1,10 +1,5 @@
 /* Variables */
 
-// fonts
-
-$font-primary: 'Monstserrat', sans-serif;
-$font-secondary: 'Oswald', sans-serif;
-
 // colors
 
 $backgroundColor: #ece5e5; // Very light gray for background
@@ -20,6 +15,7 @@ $inputBorder: rgb(61, 217, 0); // Greenish border color for input
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 /* Ustawienia globalne */
@@ -34,6 +30,8 @@ body {
 }
 form {
   display: flex;
+  justify-content: center;
+  // align-items: center;
   flex-direction: column;
   background-color: $backgroundColor;
   border-radius: 20px;
@@ -48,12 +46,14 @@ h1 {
   color: $textColor;
 }
 .slogan {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-style: italic;
+  font-size: 16px;
   color: rgb(20, 121, 11);
 }
 
-.input__group {
+.input-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,4 +79,48 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+button:hover {
+  color: #4caf50;
+}
+.add_circle-modifier {
+  font-size: 40px;
+}
+
+.error-msg {
+  background-color: $greenColor;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  margin-top: 10px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.task-list {
+  width: 350px;
+  margin-top: 20px;
+  // border: 1px solid #6f1010;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: monospace;
+  background-color: #9cb0a0;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: -3px 0px 8px 0px rgba(66, 68, 90, 1);
+}
+
+.remove-task {
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.remove-task:hover {
+  background-color: rgb(165, 152, 157);
 }
